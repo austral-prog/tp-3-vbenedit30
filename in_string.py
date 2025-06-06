@@ -1,8 +1,20 @@
 def check_vowels():
-	nombre = input(("Ingresa tu nombre: ").lower())
-	print("Contiene a:", "a" in nombre or "A" in nombre)
-	print("Contiene e:", "e" in nombre or "E" in nombre)
-	print("Contiene i:", "i" in nombre or "I" in nombre)
-	print("Contiene o:", "o" in nombre or "O" in nombre)
-	print("Contiene u:", "u" in nombre or "U" in nombre)
+	nombre = input("Ingresa tu nombre:").lower()
+	a = "a"
+	e = "e"
+	i = "i"
+	o = "o"
+	u = "u"
+
+	print(f"Contiene {a}: {"a" in nombre}")
+	print(f"Contiene {e}: {"e" in nombre}")
+	print(f"Contiene {i}: {"i" in nombre}")
+	print(f"Contiene {o}: {"o" in nombre}")
+	print(f"Contiene {u}: {"u" in nombre}")
+
+def slice_advanced():
+	texto = input("Ingresa un texto:")
+	resultado = texto[4: :2]
+	print(resultado)
+
 
